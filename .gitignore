@@ -1,0 +1,16 @@
+# Logs
+logs
+*.log
+
+# Dependency directory
+node
+node_modules
+bower_components
+.bowerrc
+build
+target
+
+# Idea editors
+.idea
+*.iml
+*.project

@@ -1,0 +1,11 @@
+{
+  "name": "ReactTutorial",
+  "version": "0.0.0",
+  "authors": [
+    "tzsiga <tzsiga@gmail.com>"
+  ],
+  "dependencies": {
+    "bootstrap": null,
+    "react": null
+  }
+}
