@@ -1,0 +1,12 @@
+{
+  "name": "ReactTutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "Zs",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs": "^2.2.4",
+    "express": "^4.11.2"
+  }
+}
