@@ -7,16 +7,32 @@
     <script src="bower_components/react/JSXTransformer.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/showdown/compressed/Showdown.js"></script>
   </head>
   <body>
     <div id="content" class="container"></div>
     <script type="text/jsx">
 
+      var converter = new Showdown.converter();
+      var Comment = React.createClass({
+      render: function() {
+        return (
+            <div className="comment">
+              <h2 className="commentAuthor">
+                {this.props.author}
+              </h2>
+              {converter.makeHtml(this.props.children.toString())}
+            </div>
+          );
+        }
+      });
+
       var CommentList = React.createClass({
         render: function() {
           return (
             <div className="commentList">
-              Hello, world! I am a CommentList.
+              <Comment author="Pete Hunt">This is one comment</Comment>
+              <Comment author="Jordan Walke">This is *another* comment</Comment>
             </div>
           );
         }

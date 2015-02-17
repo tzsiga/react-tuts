@@ -5,7 +5,8 @@
     "tzsiga <tzsiga@gmail.com>"
   ],
   "dependencies": {
-    "bootstrap": null,
-    "react": null
+    "showdown": "~0.3.4",
+    "bootstrap": "~3.3.2",
+    "react": "~0.12.2"
   }
 }
